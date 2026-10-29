@@ -1,0 +1,9 @@
+flowchart TD
+    A["Network Traffic"] --> B["pfSense Firewall"]
+    B --> C["Suricata IDS/IPS"]
+    B --> D["Firewall Logs"]
+    C --> E["Security Alerts"]
+    D --> F["Logstash"]
+    E --> F
+    F --> G["Elasticsearch"]
+    G --> H["Kibana Dashboards"]
